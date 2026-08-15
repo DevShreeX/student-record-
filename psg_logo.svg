@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" width="100%" height="100%">
+  <defs>
+    <style>
+      .bold-text { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; }
+      .sans-text { font-family: Arial, Helvetica, sans-serif; font-weight: 800; }
+    </style>
+  </defs>
+
+  <!-- Outer Shield Border Contour -->
+  <path d="M 15 15 
+           C 15 5, 285 5, 285 15 
+           L 285 180 
+           C 285 290, 150 330, 150 330 
+           C 150 330, 15 290, 15 180 
+           Z" 
+        fill="#FFFFFF" stroke="#000000" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Inner Shield Border -->
+  <path d="M 22 22 
+           C 22 14, 278 14, 278 22 
+           L 278 178 
+           C 278 282, 150 320, 150 320 
+           C 150 320, 22 282, 22 178 
+           Z" 
+        fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- GRID DIVIDERS -->
+  <!-- Top Horizontal Line (y = 90) -->
+  <line x1="22" y1="90" x2="278" y2="90" stroke="#000000" stroke-width="3"/>
+  
+  <!-- Middle Horizontal Line (y = 158) -->
+  <line x1="22" y1="158" x2="278" y2="158" stroke="#000000" stroke-width="3"/>
+  
+  <!-- Top Center Vertical Line (y = 22 to 158, x = 150) -->
+  <line x1="150" y1="22" x2="150" y2="158" stroke="#000000" stroke-width="3"/>
+
+  <!-- Lower Section Vertical Bands (y = 158 to 320, x = 100 and x = 200) -->
+  <!-- Left Black Fill -->
+  <path d="M 22 158 L 100 158 L 100 300 C 70 280, 22 230, 22 178 Z" fill="#000000"/>
+  <!-- Right Black Fill -->
+  <path d="M 200 158 L 278 158 L 278 178 C 278 230, 230 280, 200 300 Z" fill="#000000"/>
+  <!-- Divider lines for lower section -->
+  <line x1="100" y1="158" x2="100" y2="306" stroke="#000000" stroke-width="3"/>
+  <line x1="200" y1="158" x2="200" y2="306" stroke="#000000" stroke-width="3"/>
+
+  <!-- ================= TOP LEFT QUADRANT (Black BG, White Textile Loop) ================= -->
+  <rect x="23" y="23" width="126" height="66" fill="#000000"/>
+  <!-- Textile oval track / race loop -->
+  <g transform="translate(30, 35)">
+    <path d="M 20 30 Q 5 15, 30 10 L 80 20 Q 95 30, 75 35 L 25 25 Z" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <ellipse cx="50" cy="22" rx="35" ry="12" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <ellipse cx="50" cy="22" rx="28" ry="8" fill="none" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- ================= TOP RIGHT QUADRANT (White BG, Black Gear Wheel) ================= -->
+  <!-- Gear Emblem -->
+  <g transform="translate(160, 32)">
+    <!-- Gear outer teeth ring -->
+    <path d="M 50 5
+             L 55 12 L 65 10 L 67 18 L 77 18 L 76 26 L 85 29 L 81 37 L 89 42 Q 90 50, 89 54 L 81 59 L 85 67 L 76 70 L 77 78 L 67 78 L 65 86 L 55 84 L 50 91 L 45 84 L 35 86 L 33 78 L 23 78 L 24 70 L 15 67 L 19 59 L 11 54 Q 10 50, 11 42 L 19 37 L 15 29 L 24 26 L 23 18 L 33 18 L 35 10 L 45 12 Z" 
+          fill="#000000"/>
+    <circle cx="50" cy="48" r="22" fill="#FFFFFF"/>
+    <circle cx="50" cy="48" r="12" fill="#000000"/>
+  </g>
+
+  <!-- ================= MIDDLE LEFT QUADRANT (White BG, Black Anvil / Machine Tool) ================= -->
+  <g transform="translate(26, 96)">
+    <!-- Machine Vice / Tool Post -->
+    <rect x="10" y="24" width="22" height="18" fill="#000000"/>
+    <rect x="32" y="16" width="60" height="24" fill="#000000"/>
+    <rect x="92" y="22" width="16" height="12" fill="#000000"/>
+    <path d="M 45 40 L 65 40 L 65 52 L 45 52 Z" fill="#000000"/>
+    <!-- Handles and knobs -->
+    <circle cx="10" cy="33" r="5" fill="#000000"/>
+    <circle cx="108" cy="28" r="4" fill="#000000"/>
+  </g>
+
+  <!-- ================= MIDDLE RIGHT QUADRANT (Striped BG, Black Electric Motor) ================= -->
+  <g transform="translate(152, 92)">
+    <!-- Background Vertical Stripes -->
+    <line x1="12" y1="0" x2="12" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="24" y1="0" x2="24" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="36" y1="0" x2="36" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="48" y1="0" x2="48" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="60" y1="0" x2="60" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="72" y1="0" x2="72" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="84" y1="0" x2="84" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="96" y1="0" x2="96" y2="65" stroke="#000000" stroke-width="1.5"/>
+    <line x1="108" y1="0" x2="108" y2="65" stroke="#000000" stroke-width="1.5"/>
+
+    <!-- Electric Motor Silhouette -->
+    <!-- Shaft -->
+    <rect x="8" y="28" width="16" height="8" fill="#000000"/>
+    <!-- Main Body -->
+    <rect x="24" y="14" width="70" height="42" rx="8" fill="#000000"/>
+    <!-- Terminal Box on Top -->
+    <rect x="42" y="6" width="30" height="10" fill="#000000"/>
+    <!-- Motor Base Feet -->
+    <rect x="30" y="56" width="18" height="6" fill="#000000"/>
+    <rect x="70" y="56" width="18" height="6" fill="#000000"/>
+    <!-- End Cap Detail -->
+    <circle cx="82" cy="35" r="12" fill="#FFFFFF"/>
+    <circle cx="82" cy="35" r="6" fill="#000000"/>
+  </g>
+
+  <!-- ================= LOWER SECTION (P S G P T C Monogram Emblem) ================= -->
+  <g transform="translate(150, 235)">
+    <!-- Central Black Circle -->
+    <circle cx="0" cy="0" r="42" fill="#000000" stroke="#FFFFFF" stroke-width="3"/>
+    
+    <!-- Letters PSG PTC -->
+    <text x="0" y="-14" class="sans-text" font-size="20" fill="#FFFFFF" text-anchor="middle">S</text>
+    <text x="-22" y="8" class="sans-text" font-size="20" fill="#FFFFFF" text-anchor="middle">P</text>
+    <text x="22" y="8" class="sans-text" font-size="20" fill="#FFFFFF" text-anchor="middle">G</text>
+    <text x="0" y="28" class="bold-text" font-size="18" fill="#FFFFFF" text-anchor="middle">PTC</text>
+  </g>
+
+  <!-- ================= BOTTOM BANNER SCROLL (KNOWLEDGE AND SERVICE) ================= -->
+  <g transform="translate(0, 312)">
+    <!-- Ribbon Shadow/Outline -->
+    <path d="M 10 26 Q 150 56 290 26 L 275 62 Q 150 90 25 62 Z" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+    <path d="M 12 28 Q 150 58 288 28 L 273 60 Q 150 88 27 60 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+    
+    <!-- Banner Text -->
+    <path id="bannerPath" d="M 22 52 Q 150 80 278 52" fill="none"/>
+    <text font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="16" fill="#000000" letter-spacing="1.5">
+      <textPath href="#bannerPath" startOffset="50%" text-anchor="middle">
+        KNOWLEDGE AND SERVICE
+      </textPath>
+    </text>
+  </g>
+
+  <!-- Established Year 1951 -->
+  <text x="150" y="375" font-family="'Times New Roman', serif" font-weight="bold" font-size="22" fill="#000000" text-anchor="middle">
+    1951
+  </text>
+</svg>
